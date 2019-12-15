@@ -1,0 +1,11 @@
+version: '2'
+services:
+  dbflow10googleconnector-postgresql:
+    image: postgres:11.5
+    # volumes:
+    #     - ~/volumes/jhipster/dbFlow10GoogleConnector/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=dbFlow10GoogleConnector
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
